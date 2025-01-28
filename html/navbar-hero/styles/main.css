@@ -5,8 +5,7 @@ body, html {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
     align-items: center;
     font-weight: 500;
     background: transparent;
@@ -19,14 +18,13 @@ body, html {
 }
 
 .navbar .left, .navbar .right {
-    display: flex;
+    display: inline;
     align-items: center;
 }
 
 .navbar .center {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1; 
+    display: inline-block;
+    margin-left: 450px; 
 }
 
 .navbar a {
@@ -42,13 +40,13 @@ body, html {
 }
 
 .navbar img {
+    display: inline;
     margin-top: 5px;
     margin-left: 15px;
 }
 
 .center a {
     position: relative;
-    display: inline-block;
 }
 
 .center a::after, 
@@ -70,8 +68,9 @@ body, html {
     transform: scaleX(1);
 }
 
-.navbar .get-start, .navbar .login {
-    float: right;
+.navbar .right {
+    display: inline-block;
+    margin-left: 350px;
     margin-right: 15px;
 }
 
