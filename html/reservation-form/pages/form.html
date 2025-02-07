@@ -35,7 +35,7 @@
                 <div class="text-input">
                     <div class="first-name-field">
                         <label for="first-name">First Name:</label>
-                        <input id="first-name" name="first-name" placeholder="First Name" required>
+                        <input id="first-name" name="first-name" placeholder="First Name" required autocomplete="on">
                     </div><br>
                     <div class="last-name-field">
                         <label for="last-name">Last Name:</label>
@@ -43,11 +43,11 @@
                     </div><br>
                     <div class="email-field">
                         <label for="email">Email:</label>
-                        <input id="email" name="email" type="email" placeholder="email" required>
+                        <input id="email" name="email" type="email" placeholder="email" required autocomplete="on">
                     </div><br>
                     <div class="tel-field">
                         <label for="phone">Phone:</label>
-                        <input id="phone" name="phone" type="tel" placeholder="phone">
+                        <input id="phone" name="phone" type="tel" placeholder="phone" autocomplete="on">
                     </div><br>
                     <div class="start-date-field">
                         <label for="start-date">Start Date:</label>
@@ -60,14 +60,14 @@
                 </div>
                 <div class="click-input">
                     <div class="package-field">
-                        <label for="packages">Package Options:</label>
+                        <p>Package Options:</p>
                         <input name="package" id="basic" type="radio" value="basic">
                         <label for="basic">Basic Package</label>
                         <input name="package" id="premium" type="radio" value="premium">
                         <label for="premium">Premium Package</label>
                     </div><br>
                     <div class="rentals-field">
-                        <label for="rentals">Rentals:</label>
+                        <p>Rentals:</p>
                         <input name="rental" id="vehicle" type="checkbox" value="vehicle">
                         <label for="vehicle">Car</label>
                         <input name="rental" id="hotel" type="checkbox" value="hotel">
@@ -77,7 +77,7 @@
                     </div><br>
                 </div>
                 <div class="optionals-field">
-                    <label>Complimentary Accomodation:</label>
+                    <p>Complimentary Accomodation:</p>
                     <select name="accomodation">
                         <option value=""></option>
                         <option value="airport">Airport Pickup</option>
