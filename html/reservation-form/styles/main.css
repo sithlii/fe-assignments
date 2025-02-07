@@ -1,0 +1,50 @@
+.hero-section-wrapper {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)), url('../assets/birana.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-content span {
+    font-size: 66px;
+    color: white;
+    cursor: default;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.mission-content-container {
+    margin: 25px;
+    font-size: 28px;
+}
+
+.mission-content-container h3 {
+    font-size: 48px;
+}
+
+.mission-content-container video {
+    float: right;
+    margin: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+@media (max-width: 580px) {
+    .hero-section-content span {
+        font-size: 42px;
+        letter-spacing: normal;
+    }
+    .mission-content-container{
+        font-size: 20px;
+    }
+    .mission-content-container h3 {
+        font-size: 36px;
+    }
+}

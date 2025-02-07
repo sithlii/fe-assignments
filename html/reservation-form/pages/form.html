@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Stay | Birana</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><i class="fa-brands fa-airbnb"></i><span>Birana</span></a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="./form.html">Book Now</a>
+            </div>
+        </nav>
+    </header>
+    <div class="form-title">
+        <h1>Book a Reservation</h1>
+    </div>
+
+    <div class="form-container">
+        <div class="form-container-wrapper">
+            <form action="https://httpbin.org/post" method="post">
+                <div class="text-input">
+                    <div class="first-name-field">
+                        <label for="first-name">First Name:</label>
+                        <input id="first-name" name="first-name" placeholder="First Name" required>
+                    </div><br>
+                    <div class="last-name-field">
+                        <label for="last-name">Last Name:</label>
+                        <input id="last-name" name="last-name" placeholder="Last Name" required>
+                    </div><br>
+                    <div class="email-field">
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="email" placeholder="email" required>
+                    </div><br>
+                    <div class="tel-field">
+                        <label for="phone">Phone:</label>
+                        <input id="phone" name="phone" type="tel" placeholder="phone">
+                    </div><br>
+                    <div class="start-date-field">
+                        <label for="start-date">Start Date:</label>
+                        <input id="start-date" name="start-date" type="date" required>
+                    </div><br>
+                    <div class="end-date-field">
+                        <label for="end-date">End Date:</label>
+                        <input id="end-date" name="end-date" type="date" required>
+                    </div><br>
+                </div>
+                <div class="click-input">
+                    <div class="package-field">
+                        <label for="packages">Package Options:</label>
+                        <input name="package" id="basic" type="radio" value="basic">
+                        <label for="basic">Basic Package</label>
+                        <input name="package" id="premium" type="radio" value="premium">
+                        <label for="premium">Premium Package</label>
+                    </div><br>
+                    <div class="rentals-field">
+                        <label for="rentals">Rentals:</label>
+                        <input name="rental" id="vehicle" type="checkbox" value="vehicle">
+                        <label for="vehicle">Car</label>
+                        <input name="rental" id="hotel" type="checkbox" value="hotel">
+                        <label for="hotel">Hotel</label>
+                        <input name="rental" id="tour" type="checkbox" value="tour">
+                        <label for="tour">City Tour</label>
+                    </div><br>
+                </div>
+                <div class="optionals-field">
+                    <label>Complimentary Accomodation:</label>
+                    <select name="accomodation">
+                        <option value=""></option>
+                        <option value="airport">Airport Pickup</option>
+                        <option value="breakfast">Free Breakfast on Arrival</option>
+                        <option value="cleaning">Waive Cleaning Fee on Checkout</option>
+                    </select>
+                </div><br>
+                <div class="additional-info-field">
+                    <label for="additional-info">If you have any other requests, please list them below:</label><br>
+                    <textarea name="additional-info" id="additional-info" rows="5" placeholder="Additional information here"></textarea>
+                </div><br>
+                <div class="submit-field">
+                    <button type="submit">Book my Reservation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>For Help Call: 801-300-4207</p>
+            <p>Or Reach Out at: support@birana.com</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+nav {
+    padding: 15px 0;
+    width: 100vw;
+    top: 0;
+    background: linear-gradient(rgb(160, 160, 242),#a1a8ae);
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav i {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 15px;
+    transform: scale(2.5);
+}
+
+span {
+    font-size: 24px;
+}
+
+nav a, nav i {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    float: right;
+}
+
+.nav-links > a {
+    padding: 10px;
+    margin-right: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 24px;
+    transition: .3s ease
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    color: black;
+    border-color: black;
+}
