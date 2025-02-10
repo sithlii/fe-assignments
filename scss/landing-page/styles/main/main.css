@@ -80,7 +80,7 @@
 }
 .domain-container .domain-section-wrapper .right-column .search-box input {
   text-indent: 32px;
-  width: 75%;
+  width: 70%;
   padding: 20px;
   border: 1px solid white;
   border-radius: 4px;
@@ -88,20 +88,22 @@
 }
 .domain-container .domain-section-wrapper .right-column .search-box .fa-search {
   position: absolute;
-  top: 20px;
+  top: 40px;
   left: 20px;
 }
-.domain-container .domain-section-wrapper .right-column .search-box button[type=submit] {
+.domain-container .domain-section-wrapper .right-column .search-box button[type=search] {
+  margin: 25px 0;
   margin-left: 10px;
   padding: 20px 30px;
   background-color: transparent;
   border: 2px solid white;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   transition: color 0.3s ease;
   z-index: 1;
 }
-.domain-container .domain-section-wrapper .right-column .search-box button[type=submit]::after {
+.domain-container .domain-section-wrapper .right-column .search-box button[type=search]::after {
   content: "";
   position: absolute;
   top: 0;
@@ -114,9 +116,112 @@
   transition: transform 0.5s ease;
   z-index: -1;
 }
-.domain-container .domain-section-wrapper .right-column .search-box button[type=submit]:hover::after {
+.domain-container .domain-section-wrapper .right-column .search-box button[type=search]:hover::after {
   transform: translateX(0);
 }
-.domain-container .domain-section-wrapper .right-column .search-box button[type=submit]:hover {
+.domain-container .domain-section-wrapper .right-column .search-box button[type=search]:hover {
   color: white;
+}
+.domain-container .domain-section-wrapper .right-column a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+.domain-container .domain-section-wrapper .right-column a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.quick-start-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgb(221, 217, 212);
+}
+.quick-start-container .quick-start-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+.quick-start-container .quick-start-wrapper .left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.quick-start-container .quick-start-wrapper .left-column video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.quick-start-container .quick-start-wrapper .right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.quick-start-container .quick-start-wrapper .right-column .qs-content-wrapper {
+  padding: 1.5rem;
+  background-color: inherit;
+  border-radius: 8px;
+}
+.quick-start-container .quick-start-wrapper .right-column .qs-content-wrapper h4 {
+  display: inline;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.quick-start-container .quick-start-wrapper .right-column .qs-content-wrapper p {
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+.quick-start-container .quick-start-wrapper .right-column .qs-content-wrapper p a {
+  color: black;
+}
+.quick-start-container .quick-start-wrapper .right-column .qs-content-wrapper button {
+  padding: 20px 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+.quick-start-container .quick-start-wrapper .right-column .qs-content-wrapper button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+.quick-start-container .quick-start-wrapper .right-column .qs-content-wrapper button:hover::after {
+  transform: translateX(0);
+}
+.quick-start-container .quick-start-wrapper .right-column .qs-content-wrapper button:hover {
+  color: white;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: black;
+}
+footer a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+}
+footer a:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=main.css.map */
