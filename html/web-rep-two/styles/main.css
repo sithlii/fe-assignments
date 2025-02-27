@@ -17,39 +17,41 @@ body, html {
     background: rgba(11, 11, 66, 0.8);
     position: fixed;
     z-index: 100;
+    margin-bottom: 90px;
 }
 
 .navbar img {
+    display: block;
+    margin: 0 auto;
     align-items: center;
-    margin-left: 800px;
 }
 
 .banner {
-    display:block;
-    margin-bottom: 195px;
-}
-
-body, .banner video{
-    margin:0;
-    top:0;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: -1;
+    position: relative;
 }
 
 .banner-icon {
-    margin-left: 700px;
-    margin-top: 400px;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner video{
+    margin:0;
+    top:0;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
 }
 
 .mission {
-    display: block;
+    display: inline-block;
     margin:0;
     top:0;
+    width: 100vw;
     height: 800px;
     background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../assets/flying-cowboys.jpg);
     background-size: cover;
@@ -57,6 +59,14 @@ body, .banner video{
     background-repeat: no-repeat;
     position: relative;
     z-index: -1;   
+}
+
+.mission img {
+    position: absolute;
+    margin: 0 auto;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .mission > * {
@@ -70,10 +80,6 @@ body, .banner video{
     font-size: 80px;
     padding-top:200px;
     margin-bottom: 15px;
-}
-.mission img {
-    margin-left: 750px;
-    margin-bottom: 60px;
 }
 
 .mission p {
