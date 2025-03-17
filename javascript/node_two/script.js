@@ -25,5 +25,4 @@ render(newHeading, "body");
 //2
 function toggleMenu() {
     document.querySelector('.nav-center').classList.toggle('active');
-    document.querySelector('.nav-right').classList.toggle('active');
 }
