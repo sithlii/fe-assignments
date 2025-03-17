@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font-size: 34px;
+}
+
+.col1 {
+    background-color: #fcba03;
+    color: #ddd;
+}
+
+.col2 {
+    background-color: #03fca1;
+    color: red;
+}
+
+.col3 {
+    background-color: #fc03c2;
+    color: yellow;
+}
