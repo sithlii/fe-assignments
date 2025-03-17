@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar-container {
+    width: 100vw;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    z-index: 10;;
+    
+    box-sizing: border-box;
+    i {
+        color: white;
+        transform: scale(1.5);
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+    }
+    .nav-left  {
+        font-size:20px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+    .nav-center {
+        padding-top: 10px
+    }
+    button {
+        padding: 15px 25px;
+        font-weight: bolder;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    .hamburger {
+        display: none;
+        color: white;
+        scale: 1.2;
+        margin-top: 15px;
+        cursor:pointer;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-left {
+        .title {
+            display: none;
+        }
+    }
+    .nav-center {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: grey;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        a {
+            padding: 5px 0;
+        }
+        
+    }
+    .nav-center.active {
+        display: flex;
+    }
+    .nav-right {
+        display: none;
+    }
+    .hamburger {
+        display: flex !important;
+    }
+}
