@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="hex-gen">
+        <h1>Hex Value Generator</h1>
+        <button onclick="generateHex(6)">Generate Hex Value to Console</button>
+    </div>
+
+    <div class="joke-gen">
+        <h1>SFW Joke Generator</h1>
+        <button onclick="generateJoke()">Generate a New Joke</button>
+        <p id="newJoke"></p><br>
+        <h3>Joke History</h3>
+        <textarea id="jokeHistory" readonly></textarea>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
