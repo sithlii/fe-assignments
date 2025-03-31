@@ -1,0 +1,17 @@
+body {
+    background-color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.profile-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
