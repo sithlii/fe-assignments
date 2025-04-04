@@ -1,0 +1,17 @@
+.show-hide-widget {
+    display: flex;
+    flex-direction: column;
+    background-color: #9ce19c;
+    color: black;
+    border-radius: 15px;
+    padding: 25px 40px;
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    p {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+}
