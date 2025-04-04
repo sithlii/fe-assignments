@@ -11,9 +11,11 @@ class Array {
 
         let removeItem = 0;
         if (this.items.length % 2 === 0) {
-            removeItem = this.items.pop();
+            removeItem = this.items[this.items.length - 1];
+            this.items = this.items.slice(0, -1);
         } else {
-            removeItem = this.items.shift();
+            removeItem = this.items[0];
+            this.items = this.items.slice(1);
         }
 
         console.log(removeItem);
